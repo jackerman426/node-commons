@@ -1,0 +1,2321 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>lib-node-commons 1.0.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>lib-node-commons</h3>
+          <div class='mb1'><code>1.0.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#'
+                  class="">
+                  
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#mongoose'
+                  class=" toggle-sibling">
+                  Mongoose
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#mongooseconnecttomongodb'
+                        class='regular pre-open'>
+                        #connectToMongoDb
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#'
+                  class="">
+                  
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#logger'
+                  class=" toggle-sibling">
+                  Logger
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#loggerinitialize'
+                        class='regular pre-open'>
+                        #initialize
+                      </a></li>
+                      
+                      <li><a
+                        href='#loggererror'
+                        class='regular pre-open'>
+                        #error
+                      </a></li>
+                      
+                      <li><a
+                        href='#loggerwarn'
+                        class='regular pre-open'>
+                        #warn
+                      </a></li>
+                      
+                      <li><a
+                        href='#loggerinfo'
+                        class='regular pre-open'>
+                        #info
+                      </a></li>
+                      
+                      <li><a
+                        href='#loggerdebug'
+                        class='regular pre-open'>
+                        #debug
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#'
+                  class="">
+                  
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#email'
+                  class=" toggle-sibling">
+                  Email
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#emailinitialize'
+                        class='regular pre-open'>
+                        #initialize
+                      </a></li>
+                      
+                      <li><a
+                        href='#emailsend'
+                        class='regular pre-open'>
+                        #send
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#utils'
+                  class=" toggle-sibling">
+                  Utils
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#utilsloadclassesinfolder'
+                        class='regular pre-open'>
+                        #loadClassesInFolder
+                      </a></li>
+                      
+                      <li><a
+                        href='#utilsloadclassesinfolderwithindexfile'
+                        class='regular pre-open'>
+                        #loadClassesInFolderWithIndexFile
+                      </a></li>
+                      
+                      <li><a
+                        href='#utilsremoveproperties'
+                        class='regular pre-open'>
+                        #removeProperties
+                      </a></li>
+                      
+                      <li><a
+                        href='#utilsappendcomponenttopath'
+                        class='regular pre-open'>
+                        #appendComponentToPath
+                      </a></li>
+                      
+                      <li><a
+                        href='#utilsappendcomponentstopath'
+                        class='regular pre-open'>
+                        #appendComponentsToPath
+                      </a></li>
+                      
+                      <li><a
+                        href='#utilsappendqueryparameters'
+                        class='regular pre-open'>
+                        #appendQueryParameters
+                      </a></li>
+                      
+                      <li><a
+                        href='#utilsurlfromcomponents'
+                        class='regular pre-open'>
+                        #urlFromComponents
+                      </a></li>
+                      
+                      <li><a
+                        href='#utilsgenerateuniquetoken'
+                        class='regular pre-open'>
+                        #generateUniqueToken
+                      </a></li>
+                      
+                      <li><a
+                        href='#utilsgeneraterandombytes'
+                        class='regular pre-open'>
+                        #generateRandomBytes
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#'
+                  class="">
+                  
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#s3'
+                  class=" toggle-sibling">
+                  S3
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#s3initialize'
+                        class='regular pre-open'>
+                        #initialize
+                      </a></li>
+                      
+                      <li><a
+                        href='#s3uploadfile'
+                        class='regular pre-open'>
+                        #uploadFile
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id=''>
+      
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Mongoose class to make the connection to mongoDB</p>
+
+
+  <div class='pre p1 fill-light mt0'></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='mongoose'>
+      Mongoose
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Mongoose Constructor</p>
+
+
+  <div class='pre p1 fill-light mt0'>new Mongoose()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='mongooseconnecttomongodb'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>connectToMongoDb(mongoUri, options, callback)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function connects to mongoDB.
+By default it connects to localhost mongoDB. If you want to connect to external db you need to provide a uri and options</p>
+
+
+  <div class='pre p1 fill-light mt0'>connectToMongoDb(mongoUri: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, callback: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>mongoUri</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The mongo uri to connect
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    The options for connecting
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>callback</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    The callback function
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id=''>
+      
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Winston logger configured with info logging level and
+log format.
+Example output:
+2018-06-19T09:20:30.742Z  - INFO - Starting Application</p>
+
+
+  <div class='pre p1 fill-light mt0'></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='logger'>
+      Logger
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Winston Constructor</p>
+
+
+  <div class='pre p1 fill-light mt0'>new Logger()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='loggerinitialize'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>initialize(logDir, level)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function initializes the winston logger. You need to specify the path where the log file is going to be saved</p>
+
+
+  <div class='pre p1 fill-light mt0'>initialize(logDir: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, level: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>logDir</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The base url to save the
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>level</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    levels of logging  (default npm levels - 
+<a href="https://github.com/winstonjs/winston#logging-levels">https://github.com/winstonjs/winston#logging-levels</a>
+)
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='loggererror'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>error(error)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function logs an error</p>
+
+
+  <div class='pre p1 fill-light mt0'>error(error: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>error</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='loggerwarn'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>warn(warn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function logs a warning</p>
+
+
+  <div class='pre p1 fill-light mt0'>warn(warn: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>warn</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='loggerinfo'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>info(info)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function logs info</p>
+
+
+  <div class='pre p1 fill-light mt0'>info(info: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>info</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='loggerdebug'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>debug(debug)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function logs debug</p>
+
+
+  <div class='pre p1 fill-light mt0'>debug(debug: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>debug</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id=''>
+      
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Email class to send emails using Bull queue and sendgrid</p>
+
+
+  <div class='pre p1 fill-light mt0'></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='email'>
+      Email
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Email Constructor</p>
+
+
+  <div class='pre p1 fill-light mt0'>new Email()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='emailinitialize'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>initialize(redisConfig, sendGridApiKey)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function initializes the email. You need to specify the redis configuration for the bull queue</p>
+
+
+  <div class='pre p1 fill-light mt0'>initialize(redisConfig: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, sendGridApiKey: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>redisConfig</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    The redis configuration for bull queue
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>redisConfig.host</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Redis host
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>redisConfig.port</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Redis port
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>redisConfig.pass</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Redis pass
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>redisConfig.db</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Redis db
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>sendGridApiKey</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    -
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='emailsend'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>send(options)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function add a job to email worker. Example of use cases can be found - <a href="https://github.com/sendgrid/sendgrid-nodejs/blob/master/packages/mail/USE_CASES.md">https://github.com/sendgrid/sendgrid-nodejs/blob/master/packages/mail/USE_CASES.md</a></p>
+
+
+  <div class='pre p1 fill-light mt0'>send(options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    The email options
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.to</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Email address recipient
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.from</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Email address sender
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.subject</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Subject of the email
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.text</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Text of the email or html
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.html</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>Html template of the email or text
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.attachments</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>
+  </td>
+  <td class='break-word'><span>Array of attachments
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.cc</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>CC email addresses
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.bcc</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>BCC email addresses
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.categories</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='utils'>
+      Utils
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Utils constructor</p>
+
+
+  <div class='pre p1 fill-light mt0'>new Utils()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='utilsloadclassesinfolder'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>loadClassesInFolder(baseDir, next)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function loads (requires) files in a folder without index file</p>
+
+
+  <div class='pre p1 fill-light mt0'>loadClassesInFolder(baseDir: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, next: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>baseDir</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The directory of the files
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>next</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    the callback function
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='utilsloadclassesinfolderwithindexfile'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>loadClassesInFolderWithIndexFile(baseDir, next)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function loads (requires) files from a dir with an index.js file (you should require the files in the index file) - used if you want to load the files in order</p>
+
+
+  <div class='pre p1 fill-light mt0'>loadClassesInFolderWithIndexFile(baseDir: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, next: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>baseDir</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    The directory of the files
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>next</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    the callback function
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='utilsremoveproperties'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>removeProperties(object, properties)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Remove properties from object if exists</p>
+
+
+  <div class='pre p1 fill-light mt0'>removeProperties(object: any, properties: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>object</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>properties</span> <code class='quiet'>(any)</code>
+	    array of properties or single property name
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='utilsappendcomponenttopath'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>appendComponentToPath(basePath, component)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Append component to path</p>
+
+
+  <div class='pre p1 fill-light mt0'>appendComponentToPath(basePath: any, component: any): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>basePath</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>component</span> <code class='quiet'>(any)</code>
+	    component to add to the path
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='utilsappendcomponentstopath'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>appendComponentsToPath(basePath, components)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Append array of path components</p>
+
+
+  <div class='pre p1 fill-light mt0'>appendComponentsToPath(basePath: any, components: any): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>basePath</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>components</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='utilsappendqueryparameters'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>appendQueryParameters(url, parameters)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Append query parameters to url</p>
+
+
+  <div class='pre p1 fill-light mt0'>appendQueryParameters(url: any, parameters: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>url</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>parameters</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='utilsurlfromcomponents'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>urlFromComponents(components, parameters)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Build a url from components and parameters</p>
+
+
+  <div class='pre p1 fill-light mt0'>urlFromComponents(components: any, parameters: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>components</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>parameters</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='utilsgenerateuniquetoken'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>generateUniqueToken(options)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Generate unitque token</p>
+
+
+  <div class='pre p1 fill-light mt0'>generateUniqueToken(options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='utilsgeneraterandombytes'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>generateRandomBytes(noOfBytes, next)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Generates cryptographically strong pseudo-random data. The size argument is a number indicating the number of bytes to generate.</p>
+
+
+  <div class='pre p1 fill-light mt0'>generateRandomBytes(noOfBytes: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, next: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>noOfBytes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>next</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id=''>
+      
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>S3 class to upload filed to AWS S3 service</p>
+
+
+  <div class='pre p1 fill-light mt0'></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='s3'>
+      S3
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>S3 Constructor</p>
+
+
+  <div class='pre p1 fill-light mt0'>new S3()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='s3initialize'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>initialize(buckets)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function adds a bucket in S3</p>
+
+
+  <div class='pre p1 fill-light mt0'>initialize(buckets: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>buckets</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>>)</code>
+	    An array of buckets (options for each bucket)
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>buckets[].name</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>The name of the bucket
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>buckets[].allowedExtensions</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>
+  </td>
+  <td class='break-word'><span>Array of allowed file extensions e.g 
+[
+"jpeg", "gif", "bmb", "tiff", "png", "jpg"
+]
+;
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>buckets[].maxSize</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>
+  </td>
+  <td class='break-word'><span>The max size of each file in the bucket in bytes eg. 5000000 for 5 mb approx
+</span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='s3uploadfile'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>uploadFile(options, next)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>This function upload a Base64 encoded file in AWS S3</p>
+
+
+  <div class='pre p1 fill-light mt0'>uploadFile(options: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>, next: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>options</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    The options of the upload
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.bucketName</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>The name of the bucket you want to upload the file
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.fileName</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>The name of the file
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.data</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></code>
+  </td>
+  <td class='break-word'><span>The Base 64 encoded file
+</span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>options.size</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></code>
+  </td>
+  <td class='break-word'><span>The Base 64 encoded file desired size - if you want to resize an image you should provide this option
+</span></td>
+</tr>
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>options.size.height</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>
+  </td>
+  <td class='break-word'><span>The Base 64 encoded file desired height
+</span></td>
+</tr>
+
+
+  
+    <tr>
+  <td class='break-word'><span class='code bold'>options.size.width</span> <code class='quiet'><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></code>
+  </td>
+  <td class='break-word'><span>The Base 64 encoded file desired width
+</span></td>
+</tr>
+
+
+  
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>next</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">function</a>)</code>
+	    The callback function
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>

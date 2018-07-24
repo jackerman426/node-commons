@@ -1,0 +1,37 @@
+{
+  "name": "lib-node-commons",
+  "private": true,
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "name": "Marios Tzakris",
+      "email": "marios@fundsup.co"
+    }
+  ],
+  "engines": {
+    "node": "8.9.4"
+  },
+  "main": "./index.js",
+  "description": "a fundsup commons lib for nodejs (mongo, redis, winston)",
+  "repository": {
+    "type": "git",
+    "url": "..."
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "async": "^2.6.1",
+    "aws-sdk": "^2.267.1",
+    "bull": "^3.4.2",
+    "gm": "^1.23.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "mongoose": "^5.1.6",
+    "node-uuid": "^1.4.8",
+    "recursive-readdir": "^2.2.2",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.5.5",
+    "dotenv": "^4.0.0"
+  }
+}
