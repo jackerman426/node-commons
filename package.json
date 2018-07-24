@@ -4,15 +4,15 @@
   "version": "1.0.0",
   "contributors": [
     {
-      "name": "Marios Tzakris",
-      "email": "marios@fundsup.co"
+      "name": "Marios",
+      "email": "mtzakris@gmail.com"
     }
   ],
   "engines": {
     "node": "8.9.4"
   },
   "main": "./index.js",
-  "description": "a fundsup commons lib for nodejs (mongo, redis, winston)",
+  "description": "a commons lib for nodejs (mongoose, redis, winston, sendgrid, s3)",
   "repository": {
     "type": "git",
     "url": "..."
