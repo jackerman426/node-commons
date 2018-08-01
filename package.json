@@ -4,15 +4,19 @@
   "version": "1.0.0",
   "contributors": [
     {
-      "name": "Marios",
+      "name": "Marios Tzakris",
       "email": "mtzakris@gmail.com"
     }
   ],
+  "scripts": {
+    "test": "node test/test.js",
+    "lint": "standard"
+  },
   "engines": {
     "node": "8.9.4"
   },
   "main": "./index.js",
-  "description": "a commons lib for nodejs (mongoose, redis, winston, sendgrid, s3)",
+  "description": "a commons lib for nodejs (mongo, redis, winston)",
   "repository": {
     "type": "git",
     "url": "..."
@@ -20,19 +24,21 @@
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
     "async": "^2.6.1",
-    "aws-sdk": "^2.267.1",
-    "bull": "^3.4.2",
+    "aws-sdk": "^2.281.1",
+    "bull": "^3.4.4",
     "gm": "^1.23.1",
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
-    "mongoose": "^5.1.6",
-    "node-uuid": "^1.4.8",
+    "mongoose": "^5.2.5",
     "recursive-readdir": "^2.2.2",
     "uuid": "^3.3.2",
     "winston": "^3.0.0"
   },
   "devDependencies": {
     "jsdoc": "^3.5.5",
-    "dotenv": "^4.0.0"
+    "standard": "9.0.1",
+    "supertest": "3.0.0",
+    "tap-dot": "1.0.5",
+    "tape": "4.6.3"
   }
 }
