@@ -1,6 +1,6 @@
 ## Release notes
 ### Version 1.0.0
 
-## Commons Library for nodejs
-It contains a logger based on Winston, Mongoose connection, several utils, email sender based on sendgrid, aws s3 file uploader
-Need to write more readme...
+## How to install:
+# You need to have an ssh connection to fundsup bitbucket account
+"lib-node-commons": "git+ssh://git@bitbucket.org:fundsup/lib-node-commons.git",
