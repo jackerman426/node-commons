@@ -1,11 +1,11 @@
 {
-  "name": "lib-node-commons",
+  "name": "node-commons",
   "private": true,
   "version": "1.0.0",
   "contributors": [
     {
       "name": "Marios Tzakris",
-      "email": "marios@fundsup.co"
+      "email": "mtzakris@gmail.com"
     }
   ],
   "scripts": {
@@ -16,7 +16,7 @@
     "node": "8.11.3"
   },
   "main": "./index.js",
-  "description": "a fundsup commons lib for nodejs (mongo, redis, winston)",
+  "description": "a commons lib for nodejs (mongo, redis, winston)",
   "repository": {
     "type": "git",
     "url": "..."
